@@ -3,13 +3,15 @@ CELSIUS_TO_FAHRENHEIT_FACTOR = 9/5
 
 def convert_to_celsius(fahrenheit):
     """Function takes a temperature in Fahrenheit and returns the temperature converted to Celsius"""
-    Temp_in_celsius = (float(fahrenheit)- 32) * FAHRENHEIT_TO_CELSIUS_FACTOR
-    return print(f'{float(fahrenheit)}°F is {Temp_in_celsius}°C')
+    fahrenheit = float(fahrenheit)
+    Temp_in_celsius = (fahrenheit - 32) * FAHRENHEIT_TO_CELSIUS_FACTOR
+    return print(f'{fahrenheit}°F is {Temp_in_celsius}°C')
     
 def convert_to_fahrenheit(celsius):
     """Function takes a temperature in Celsius and returns the temperature converted to Fahrenheit"""
-    Temp_in_fahrenheit = (float(celsius) * CELSIUS_TO_FAHRENHEIT_FACTOR) + 32
-    return print(f'{float(celsius)}°C is {Temp_in_fahrenheit}°F') 
+    celsius = float(celsius)
+    Temp_in_fahrenheit = (celsius * CELSIUS_TO_FAHRENHEIT_FACTOR) + 32
+    return print(f'{celsius}°C is {Temp_in_fahrenheit}°F') 
 
 temp_correct = False
 while not temp_correct:
