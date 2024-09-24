@@ -12,10 +12,10 @@ def main():
         choice = input("Enter your choice: ")
 
         if choice == '1':
-            item_name = input("Enter Item Name Please: ")
+            item_name = input("Enter the item to add: ")
             shopping_list.append(item_name)
         elif choice == '2':
-            item_name = input("Enter Item Name Please: ")
+            item_name = input("Enter the item to remove: ")
             if item_name in shopping_list:
                 shopping_list.remove(item_name)
             else:

@@ -3,7 +3,8 @@ from datetime import date, timedelta, datetime
 def display_current_datetime():
     """ A function to display current date and time. """
     current_date = datetime.now()
-    return print(f"Current date and time: {current_date}")
+    current_date_time = current_date.strftime("%m/%d/%Y, %H:%M:%S")
+    return print(f"Current date and time: {current_date_time}")
 
 
 def calculate_future_date():
