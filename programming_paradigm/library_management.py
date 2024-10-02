@@ -3,6 +3,8 @@ class Book:
         self.title = title
         self.author = author
         self._is_checked_out = False
+    def return_book(self, title):
+        pass
         
     
         
@@ -20,8 +22,6 @@ class Library:
             if title in book.title:
                 book._is_checked_out = True
                 
-    def return_book(self, title):
-        pass
                 
     def return_book(self, title):
         for book in self.__books:
