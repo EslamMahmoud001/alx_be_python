@@ -3,6 +3,7 @@ class Book:
         self.title = title
         self.author = author
         self._is_checked_out = False
+        
     def return_book(self):
         pass
         
@@ -15,10 +16,10 @@ class Library:
         
     def add_book(self, book : Book):
         self.new_book = book
-        self.__books.append(self.new_book)
+        self._books.append(self.new_book)
 
     def check_out_book(self, title):
-        for book in self.__books:
+        for book in self._books:
             if title in book.title:
                 book._is_checked_out = True
                 
