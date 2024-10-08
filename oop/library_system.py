@@ -24,14 +24,15 @@ class PrintBook(Book):
         return f"{self.__class__.__name__}: {self.title} by {self.author}, Page Count: {self.page_count}"
             
 class Library:
-    books = []
-    
+    def __init__(self):
+        self.books = []
+        
     def add_book(self, book: Book):
         self.book = book
-        Library.books.append(self.book)
+        self.books.append(self.book)
         
     def list_books(self):
-        for item in Library.books:
+        for item in self.books:
             print(item)
 
             
